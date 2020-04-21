@@ -1,0 +1,10 @@
+<h1>Login</h1>
+<div class="container">
+    <div class="alert alert-warning" *ngIf="invalidLogin">{{erroMensage}}</div>
+    <div>
+        User : <input type="text" name="username" [(ngModel)]="username">
+        Senha : <input type="password" name="password" [(ngModel)]="password">
+        <!-- <button class="btn btn-success" (click)=handleBasicAuthLogin()>Login</button> -->
+        <button class="btn btn-success" (click)=handleJWTBasicAuthLogin()>Login</button>
+    </div>
+</div>

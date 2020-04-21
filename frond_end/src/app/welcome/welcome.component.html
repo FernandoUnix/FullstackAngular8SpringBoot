@@ -1,0 +1,17 @@
+<h1>
+  welcome {{name}}
+</h1>
+<div class="container">
+  acesse seus todos <a routerLink="/todos">Here</a>
+</div>
+
+<div class="container">
+  clicke here to get customize mensage <button class="btn btn-success" (click)="getWelcomeMessage()">Get MEssage</button>
+</div>
+
+
+<div class="container" *ngIf="welcomeMensagem">
+<h1>Mensagem</h1>
+{{welcomeMensagem}}
+</div>
+
